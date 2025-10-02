@@ -7,7 +7,7 @@ import random
 
 
 def check_darwin_algorithm(mutation_rate:float):
-    return max(0, float(random.uniform(0, 1))) > mutation_rate
+    return random.uniform(0, 1) > mutation_rate
 
 
 print(check_darwin_algorithm(0))
